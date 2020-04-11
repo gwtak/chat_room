@@ -7,7 +7,7 @@
 #include<string.h>
 #include<pthread.h>
 #include<unistd.h>
-#include<signal.h>
+
 
 struct client_mems_info{
 	int connectfd;//存放客户端已连接socket
@@ -85,8 +85,8 @@ int main(){
 		int connectfd=0;
 		struct sockaddr_in client;
 		memset(&client,0,sizeof(client));
-		socklen_t client_size=sizeof(client);
-		if((connectfd=accept(sockfd,(struct sockaddr*)&client,&client_size))<0)//只对接入的每个socket响应一次，若放入死循环会卡住
+		//socklen_t client_size=sizeof(client);
+		if((connectfd=accept(sockfd,(struct sockaddr*)&client,(socklen_t*)sizeof(client)))<0)//只对接入的每个socket响应一次，若放入死循环会卡住
 			perror("accept failed"),exit(0);
 	
 		int n=search_mems(client_mems,client);//查询是否存在

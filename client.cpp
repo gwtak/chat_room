@@ -7,7 +7,6 @@
 #include<string.h>
 #include<unistd.h>
 #include<pthread.h>
-#include<signal.h>
 
 
 //连接服务器

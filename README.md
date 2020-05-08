@@ -1,3 +1,5 @@
+升级版：https://github.com/gwtak/chat_room_pro
+
 Linux环境下运行通过
 
 已知问题：

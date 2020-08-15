@@ -8,6 +8,6 @@ Linux环境下运行通过
 
 2、client断开时，未关闭socket，不断发送空消息
 
-![Image text](https://github.com/gwtak/chat_room/blob/master/20200429104738.png?raw=true)
+![Image text](/20200429104738.png)
 
-![Image text](https://raw.githubusercontent.com/gwtak/chat_room/master/20200429104842.png)
+![Image text](/20200429104842.png)

@@ -1,4 +1,4 @@
-升级版：https://github.com/gwtak/chat_room_pro
+升级版：https://github.com/gwtak/ChatRoom_Epoll
 
 Linux环境下运行通过
 
